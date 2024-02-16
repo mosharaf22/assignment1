@@ -1,38 +1,411 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
+  max-width: 1300px;
+  margin: 0px auto;
   font-family: 'Merriweather', serif;
-  background: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
 
-header {
-  width: auto;
-  height: 600px;
-  border-radius: 16px;
-  color: #FFF;
-  text-align: center;
-  font-family: Merriweather;
-  font-style: normal;
-  background-image:linear-gradient(180deg, #070211 0%,
-  rgba(7, 2, 17, 0.00) 80%), url("/resources/Banner\ Image.png");
-  margin: 50px 140px 120px 140px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0px 300px;
+.btn-primary {
+  border-radius: 8px;
+  border: 0px;
+  background: rgb(226, 52, 52);
+  padding: 16px 32px;
+  color: white;
+  font-size: 20px;
+  font-weight: 30px;
 }
-.greeting-title{
+
+/* banner styles start */
+
+.banner-section {
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #070211 0%,
+          rgba(7, 2, 17, 0.00) 80%), url('../resources/Banner\ Image.png')
+           no-repeat;
+  margin: 50px 50px 0px 50px;
+  background-size: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.year-celebrate {
+  color: #FFF;
   font-size: 32px;
   font-weight: 400;
-  padding-top: 200px;
+  padding-top: 120px;
+  padding-bottom: 0px;
+  text-align: center;
+
 }
-.greeting-info{
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 95px;
+
+.year-party-title {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 400;
+  padding: 0px 300px;
+  text-align: center;
+}
+
+/* 65% offer section styles */
+
+.offer-section {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.offer {
+  color: #F00;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.offer-description {
+  color: #F00;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.categories-title {
+  color: #070211;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.offer-pic {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+/* midnight party styles */
+
+.midnight-party-section {
+  display: flex;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 60%),
+      url('../resources/Vectorrr.png') no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 580px;
+  margin: 50px 50px 0px 50px;
+  border-radius: 10px;
+
+}
+
+.midnight-party-title {
+  color: #FFF;
+  font-size: 50px;
+  padding: 40px 100px 0px 90px;
+  margin-bottom: 0px;
+}
+
+.new-year-pic {
+  padding-right: 150px;
+  margin-top: 40px;
+}
+
+.midnight-party-description {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0px 200px 0px 125px;
+}
+
+.midnight-party-section button {
+  margin-left: 160px;
+}
+
+/* party information styles  */
+
+.party-info-section {
+  background-color: rgba(248, 183, 183, 0.1);
+  height: 400px;
+  margin: 0px 50px;
+  border-radius: 10px;
+  margin-top: 0px;
+
+}
+
+.party-info {
+  color: #070211;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  padding: 10px 200px;
+
+}
+.party-info span {
+  color: #F00;
+}
+
+/* coming soon offer section styles */
+
+.coming-soon-offer {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  margin: 50px 120px;
+  border-radius: 10px;
+  gap: 20px;
+}
+.offer-info {
+  width: 100%;
+}
+
+.offer-title {
+  color: #F00;
+  font-size: 20px;
+  padding-top: 100px;
+}
+
+.offer-state {
+  color: #070211;
+  font-size: 30px;
+
+}
+.new-offer-description {
+  color: rgba(7, 2, 17, 0.60);
+  font-size: 20px;
+}
+.offer-img {
+  text-align: center;
+  width: 463px;
+  height: 463px;
+  flex-shrink: 0;
+  border-radius: 463px;
+  border: 15px solid #F00;
+}
+.offer-img img {
+  margin-top: 50px;
+}
+.offer-info {
+  width: 100%;
+}
+
+.offer-time {
+  padding-top: 80px;
+  width: 100%;
+}
+.offer-year {
+  color: #F00;
+  font-size: 40px;
+}
+
+/* holiday sell section styles */
+
+.holiday-sell-section {
+  height: 860px;
+  background-image: url('../resources/Rectangle\ 2.png'),
+      url('../resources/Rectangle\ 1.png');
+  background-position: bottom, right;
+  background-repeat: no-repeat;
+  margin: 200px 50px 0px 50px;
+  border-radius: 8px;
+}
+
+.holiday-sell-info {
+  text-align: center;
+}
+
+.function-title {
+  color: #070211;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.holiday-sell {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: black;
+  font-size: 50px;
+
+}
+
+.holiday-sell span {
+  color: #F00;
+}
+
+.holiday-sell-description {
+  color: rgba(7, 2, 17, 0.60);
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 125px;
+
+}
+
+.holiday-sell-img {
+  display: flex;
+}
+
+.holiday-exciting-img {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.holiday-prize-img {
+  width: 50%;
+}
+
+/* awesome portfolio section styles */
+
+.portfolio-section {
+  margin: 50px 50px 0px 50px;
+
+}
+
+.awesome-item-images {
+  display: flex;
+}
+
+.portfolio-images img {
+  width: 95%;
+  margin: 7px 0px;
+
+}
+.portfolio-images img:hover {
+  animation: big-normal 2s ease-out infinite;
+}
+
+@keyframes big-normal {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.12);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.gift-title {
+  color: #F00;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.portfolio-title {
+  color: #070211;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.portfolio-description {
+  color: rgba(7, 2, 17, 0.60);
+  font-size: 19px;
+  width: 70%;
+  margin-top: 5px;
+}
+
+/* subscribe section styles */
+
+.subscribe-section {
+  background-color: rgba(212, 110, 110, 0.1);
+  align-items: center;
   justify-content: center;
-  padding-bottom: 200px;
+  height: 600px;
+  margin: 50px 50px 0px 50px;
+  border-radius: 10px;
+}
+
+.subscribe-title {
+  color: #070211;
+  text-align: center;
+  font-size: 40px;
+}
+
+.subscribe-description {
+  color: rgba(7, 2, 17, 0.60);
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 100px;
+}
+
+.message-icon {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.subscribe-field {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+#subscribe-btn {
+  border-radius: 0px 50px 50px 0px;
+  padding: 20px 60px 20px 60px;
+  background: #F00;
+  color: white;
+  border: 0px;
+}
+
+#email-field {
+  border-radius: 50px 0px 0px 50px;
+  padding: 20px 150px 20px 30px;
+  border: 0px;
+}
+
+/* footer section styles */
+
+.contact-section {
+  height: 450px;
+  margin-top: 70px;
+  background-color: black;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 120px;
+}
+
+.social-media {
+  color: #F00;
+  text-align: center;
+}
+
+.social-media img {
+  margin-top: 0px;
+  margin-right: 20px;
+  width: 4%;
+}
+
+.copyright-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px;
+}
+
+.copyright-info button {
+  border-radius: 5px;
+  height: 40px;
+}
+
+.web-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-section hr {
+  height: 1px;
+  margin: 0px 140px;
 }
